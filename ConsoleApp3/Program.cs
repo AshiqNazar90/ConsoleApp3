@@ -14,10 +14,10 @@ namespace ConsoleApp3
         {
             EmployeeModel value = new EmployeeModel();
 
-            value.EmployeeID = "01";
-            value.Name = "Ashiq";
-            value.Designation = "Tester";
-            
+            value.EmployeeID = Console.ReadLine();
+            value.Name = Console.ReadLine();
+            value.Designation = Console.ReadLine();
+
             EmployeeDB dbContext= new EmployeeDB();
             //Add a row in table
             dbContext.Add(value);
